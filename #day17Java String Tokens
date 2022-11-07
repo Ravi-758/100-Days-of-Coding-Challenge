@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    String s = scan.nextLine();
+    // write code from here
+    scan.close();
+
+    String[] b = s.trim().split("[ !,?._'@]+");
+
+    if(s.trim().isEmpty()){
+    System.out.println("0");
+    }
+   else{
+    System.out.println(b.length);
+    for (String a : b) {
+        System.out.println(a);
+    }
+   }
+}
+}
